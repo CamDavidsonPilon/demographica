@@ -43,11 +43,15 @@ class NameDistribution(object):
 
         #difference from prior
         ax = plt.subplot(2,1,2)
-        (self.distribution - PRIOR).plot(kind='bar', ax=ax)
+        (self.distribution - PRIOR).round(4).plot(kind='bar', ax=ax)
         ax.set_title('Absolute differences in age distribution')
         return
 
     def normalize_name(self,name):
+        """
+        Normalize a name. 
+
+        """
         capitalize = lambda name: (name[0].upper() + name[1:].lower()).strip()
         return " ".join( map( capitalize, name.split()))
 
