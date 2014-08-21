@@ -15,6 +15,7 @@ Analyse US name distributions and create age profiles.
 If you leave the last arugment variable, you can get the distribution: 
 
     TOTALS.ix['Jennifer', 'F', :]
+    
     """
                     occurrences
     age_bin
@@ -35,7 +36,7 @@ If you leave the last arugment variable, you can get the distribution:
     70 to 74 years         1225
     75 to 79 years           55
     80 to 84 years           21
-  """
+    """
   
 But why read numbers when you can plot! 
 
