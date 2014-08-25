@@ -66,6 +66,7 @@ class DiscreteDistribution(object):
     def __init__(self, prior):
         self.posterior = prior
         self._prior = prior
+        self.n = 0
 
     def update(self, p):
         #P(age_bin) = P(age_bin | 'Sara')*P('Sara' | Alive)*P(Alive) + .. 

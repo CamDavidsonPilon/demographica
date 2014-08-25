@@ -8,7 +8,9 @@ SURVIVAL = pd.Series([0.99, 0.98, 0.97, 0.96, 0.96, 0.95, 0.95, 0.94, 0.93, 0.92
 
 
 class NameDistribution(object):
-
+    """
+    Work in Progress
+    """
     def __init__(self):
         self._discrete_distribution = DiscreteDistribution(PRIOR)
 
@@ -65,7 +67,9 @@ class NameDistribution(object):
 
 
 if __name__=="__main__":
-
+    """
+    WIP
+    """
     nd = NameDistribution()
     for i in range(1000):
         nd.update('Brittany')
