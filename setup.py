@@ -9,7 +9,7 @@ LONG_DESC = open("README.md").read()
 
 setup(
     name="demographica",
-    version='0.1',
+    version='0.1.1',
     description=DESC,
     long_description=LONG_DESC,
     author="Cameron Davidson-Pilon",
