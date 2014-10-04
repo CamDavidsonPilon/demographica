@@ -1,17 +1,16 @@
 #!/usr/bin/env python
 
 import sys
+import os
 from setuptools import setup
 
 DESC = """A Python Package to infer ages using US Census Data"""
 
-LONG_DESC = open("README.md").read()
-
 setup(
     name="demographica",
-    version='0.1.2',
+    version='0.1.4',
     description=DESC,
-    long_description=LONG_DESC,
+    long_description=DESC,
     author="Cameron Davidson-Pilon",
     author_email="cam.davidson.pilon@gmail.com",
     license="MIT",
