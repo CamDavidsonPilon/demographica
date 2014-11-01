@@ -1,5 +1,4 @@
 import pandas as pd
-from matplotlib import pyplot as plt
 from string import capwords
 
 from os.path import dirname, abspath
@@ -42,6 +41,11 @@ def compute_name_frequencies(names):
     return data_normalized
 
 def pplot(age_distribution, label='Inferred age distribution', plot_US_age=True):
+    try:
+        from matplotlib import pyplot as plt
+    except ImportError:
+        raise ImportError("Please pip install matplotlib to use the pplot function")
+
     ax = age_distribution['probability'].plot(rot=25, label=label)
     ax.set_ylabel('Percent')
     ax.set_xlabel('Age')
