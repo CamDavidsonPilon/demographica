@@ -8,7 +8,7 @@ DESC = """A Python Package to infer ages using US Census Data"""
 
 setup(
     name="demographica",
-    version='0.2.2',
+    version='0.2.3',
     description=DESC,
     long_description=DESC,
     author="Cameron Davidson-Pilon",
