@@ -5,10 +5,10 @@ from os.path import dirname, abspath
 
 PATH = '%s/' % (dirname(abspath(__file__)),)
 
-NAME_DISTRIBUTIONS = pd.read_csv(PATH + '../datasets/NameDistributions.csv', index_col=[0,1])
+NAME_DISTRIBUTIONS = pd.read_csv(PATH + '/datasets/NameDistributions.csv', index_col=[0,1])
 VALID_NAMES = set(NAME_DISTRIBUTIONS.index.levels[0])
-SEX_DISTRIBUTIONS = pd.read_csv(PATH + '../datasets/SexDistributions.csv', index_col=[0,1])
-US_AGE = pd.read_csv(PATH + '../datasets/US Age Dist.csv', index_col=[0])
+SEX_DISTRIBUTIONS = pd.read_csv(PATH + '/datasets/SexDistributions.csv', index_col=[0,1])
+US_AGE = pd.read_csv(PATH + '/datasets/US Age Dist.csv', index_col=[0])
 
 
 def age_calculator(name_frequencies):
