@@ -8,7 +8,7 @@ DESC = """A Python Package to infer ages using US Census Data"""
 
 setup(
     name="demographica",
-    version='0.1.4',
+    version='0.1.5',
     description=DESC,
     long_description=DESC,
     author="Cameron Davidson-Pilon",
@@ -16,7 +16,7 @@ setup(
     license="MIT",
     packages=["demographica"],
     url="https://github.com/CamDavidsonPilon/demographica",
-    install_requires=["numpy", "pandas>=0.14", "matplotlib"],
+    install_requires=["numpy", "pandas>=0.14"],
     classifiers=[
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: MIT License",
