@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import pandas as pd
 from string import capwords
 
@@ -58,7 +60,7 @@ def pplot(age_distribution, label='Inferred age distribution', plot_US_age=True)
     return ax
 
 if __name__=="__main__":
-    names = pd.read_csv(PATH + '../datasets/sample_first_names.tsv', delimiter="\t")['first_name']
+    names = pd.read_csv(PATH + '/datasets/sample_first_names.tsv', delimiter="\t")['first_name']
     names = names.ix[pd.notnull(names)]
 
     name_distribution = compute_name_frequencies(names)
@@ -66,11 +68,11 @@ if __name__=="__main__":
     age_distribution = age_calculator(name_distribution)
     sex_distribution = sex_calculator(name_distribution)
 
-    print names.head(10)
-    print
-    print age_distribution
-    print
-    print sex_distribution
+    print(names.head(10))
+    print()
+    print(age_distribution)
+    print()
+    print(sex_distribution)
 
-    # plotting 
+    # plotting
     # pplot(age_distribution)
